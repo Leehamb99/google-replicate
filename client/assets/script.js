@@ -19,6 +19,4 @@ document.getElementById("button1").onclick = function (e) {
       }
     }
 
-  document.getElementById("button2").onclick = function (e) {
-      e.preventDefault()
-  };
+  document.getElementById("button2").onclick = random() 

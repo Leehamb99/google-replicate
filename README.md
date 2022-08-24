@@ -3,7 +3,7 @@
 ### Installation
 
 1. Clone or download the repo.
-2. Open terminal and navigate to `shaw-lap1-debug-Babole` folder.
+2. Open terminal and navigate to `google-replicate` folder.
 3. Install dependencies
     - `cd server`
     - `npm install`

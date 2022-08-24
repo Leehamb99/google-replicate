@@ -1,21 +1,24 @@
-const button = document.querySelector("#button1");
+ document.getElementById("button1").onclick = function (e) {
+        e.preventDefault()
+        location.href = "http://localhost:8000/results.html?";
+    };
 
 
-const search = async (e) => {
-  try{
-      const res = await fetch (`http://localhost:4000/ten-websites`);
-      const data = await res.json();
-      data.forEach(element => {
-        document.getElementById('text1').innerHTML = element.title
-      });   
+    
+    const random = async (e) => {
+      try{
+          const res = await fetch (`http://localhost:4000/ten-websites/random`);
+          const data = await res.text();
+          location.href = data;
+    
+          
+          
+      }
+      catch (error){
+          console.log(error)
+      }
+    }
 
-      
-      
-  }
-  catch (error){
-      console.log(error)
-  }
-}
-
-
-module.exports = search
+  document.getElementById("button2").onclick = function (e) {
+      e.preventDefault()
+  };

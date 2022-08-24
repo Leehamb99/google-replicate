@@ -1,6 +1,8 @@
 const express = require('express')
-const app = express()
+const app = express();
 const cors = require('cors');
+app.use(cors());
+
 
 const tenWebsites = [
     {title: "Cat.com | Cat | Caterpillar", link: "https://www.cat.com/", description: "Welcome! Select a region and language to continue. Select a Region, Africa, Middle-East, Asia, Australia, New Zealand, Eurasia, Europe, Latin ..."},
